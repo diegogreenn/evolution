@@ -43,6 +43,7 @@ services:
       - POSTGRES_USER=evolution_user
       - POSTGRES_PASSWORD=123456
       - POSTGRES_DB=evolution
+      - POSTGRES_HOST_AUTH_METHOD=md5
     volumes:
       - /data/evolution/postgres:/var/lib/postgresql/data
 
